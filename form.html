@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table align="center" 
+            <tr>
+                <td>username:</td>
+                <td><input type="text" name="txtuser" placeholder="Isikan Dengan Benar"
+                    pattern="[A-Za-z]+"> </td>
+            </tr>
+            <tr>
+                <td> password: </td>
+                <td><input type="password" name="txtpass" placeholder="Minimal 6 Karakter"
+                    pattern="[A-Za-z0-9]+{6,15}"> </td>
+            </tr>
+             <tr>
+                <td>umur:</td>
+                <td><input type="number" name="txtumur" id="" min="18" max="100"></td>
+            </tr>
+            <tr>
+                <td>jenis kelamin:</td>
+                <td>
+                    <input type="radio" name="txtjk" id="" value="p">Laki-Laki
+                    <input type="radio" name="txtjk" id="" value="w">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>alamat:</td>
+                <td><textarea name="txtalamat" id="" cols="30" rows="5" placeholder="Isikan Alamat Dengan Lengkap"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir:</td>
+                <td><input type="date" name="txttglahir" id=""></td>
+            </tr>
+            <tr>
+                <td>Jurusan: </td>
+                <td><select name="txtjurusan" id="">
+                    <optgroup label="FTD">
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SK">Sistem Komputer</option>
+                        <option value="DKV">Desain Komunikasi Visual</option>
+                    </optgroup>
+                    <optgroup label="FEB">
+                        <option value="AK">Akuntansi</option>
+                        <option value="MJ">Manajemen</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" name="cmdkirim">
+                    <input type="reset" value="Reset" name="cmdreset"></td>
+            </tr> 
+        </table>
+    </form>
+</body>
+</html>
