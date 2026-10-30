@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>UNDUHAN FORM</title>
+    <meta name="description" content="">
+    <meta name="author" content="FTD INSTITUT ASIA MALANG">
+    <meta name="google-site-verification" content="Gf-VAzYDwQ95p-CzT18qv45u0882C-_PGnP2FBN0yxQ" />
+
+    <meta property="og:title" content="UNDUHAN FORM" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://34.124.248.177:8001/unduhan" />
+    <meta property="og:image" content="http://34.124.248.177:8001/assets/static/images/stmik.png" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="FTD INSTITUT ASIA MALANG" />
+
+    <meta name="twitter:site" content="http://34.124.248.177:8001/unduhan">
+    <meta name="twitter:title" content="UNDUHAN FORM">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image:src" content="http://34.124.248.177:8001/assets/static/images/stmik.png">
+        <link rel="shortcut icon" href="assets/static/images/favicon.png">
+        <!-- Vendor CSS Files -->
+<link href="assetsbaru/vendor/aos/aos.css" type="text/css" rel="stylesheet">
+<link href="assetsbaru/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="assetsbaru/vendor/bootstrap-icons/bootstrap-icons.css" type="text/css" rel="stylesheet">
+<link href="assetsbaru/vendor/glightbox/css/glightbox.min.css" type="text/css" rel="stylesheet">
+<link href="assetsbaru/vendor/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+<!-- Template Main CSS File -->
+<link href="assetsbaru/css/style.css%3Fv=1.0.css" type="text/css" rel="stylesheet">
+<style>
+    .h10, h10{
+    font-size: 1.2rem;
+    color: #000000;
+    font-family: poppins,sans-serif;
+    margin-bottom: 25px;
+   }
+	.act-btn{
+	  position: fixed;
+      background: #F4A832;
+      display: block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color:#000000;
+      /*font-weight: bold;*/
+      border-radius: 50px;
+      text-decoration: none;
+      transition: ease all 0.3s;
+      position: fixed;
+      right: 15px;
+      bottom:15px;
+      z-index: 996;
+    }
+.act-btn:hover{background: #F4A832}
+
+    .act-translate {
+        position: fixed;
+        display: block;
+        width: 200px;
+        left: 15px;
+        bottom: 15px;
+        z-index: 996;
+    }
+</style>
+<!-- Google Translate API script -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        autoDisplay: false,
+        includedLanguages: 'id,en,ms,th,ko,ja,zh-TW',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    }, 
+       'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+	<style type="text/css">
+		.box-unduhan{
+			padding: 15px;
+			min-height: 500px;
+		}
+		.box-unduhan .item{
+			font-size: 13.5pt;
+			border-bottom: 1px solid #d7d7d7 !important;
+			padding-top: 7px;
+			padding-bottom: 8px;
+			color: #333346 !important
+		}
+		.box-unduhan .item a{
+			color: #333346 !important;
+			cursor: pointer;
+		}
+		.box-unduhan .item a:hover, .box-unduhan .item a:focus{
+			color: #EF5F5A !important;
+		}
+        .pagination li{
+          color: white;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin-right: 4px !important;
+        }
+        
+        .pagination li.active{
+            border-radius: 10px;
+            background:rgba(6,12,34,.98) !important;
+        }
+        
+        .pagination a {
+            color:rgba(6,12,34,.98) !important;
+        }
+	</style>
+            
+    <style>
+        .custom-mainku {
+            background: #101522 !important; 
+            padding: 10% !important;
+        }
+        .custom-kartu {
+            border-radius: 20px !important; 
+            border: none !important;
+            padding: 5%;
+        }
+        @media (max-width: 767.98px) {
+            .custom-mainku {
+                background: #101522 !important; 
+                padding: 24% 5% 5% 5% !important;
+            }
+            .custom-kartu {
+                border-radius: 20px !important; 
+                border: none !important;
+                padding: 3%;
+            }   
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .custom-mainku {
+                background: #101522 !important; 
+                padding: 12% 9% 9% 9% !important;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .custom-mainku {
+                background: #101522 !important; 
+                padding: 10% !important;
+            }
+        }
+        .pagination {
+            display: inline-block !important;
+        }
+        .pagination li{
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin-right: 4px !important;
+        }
+        
+        .pagination li.active{
+            border-radius: 10px;
+            background:rgba(6,12,34,.98) !important;
+            color: white !important;
+        }
+        
+        .pagination a {
+            color:rgba(6,12,34,.98) !important;
+        }
+    </style>
+    </head>
+    <body>
+    <!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center ">
+    <div class="container pl-5 pr-5 d-flex align-items-center">
+        <div id="logo" class="me-auto">
+            <a href="index.html" class="scrollto"><img src="assetsbaru/img/asia.png" alt=""
+                    title=""></a>
+        </div>
+        <!-- navbar -->
+        <nav id="navbar" class="navbar order-last order-lg-0" style="padding-left: 100px;">
+            <ul>
+                <li><a class="nav-link scrollto" href="index.html">Beranda</a></li>
+                <li><a class="nav-link scrollto" href="visi-misi.html">Visi & Misi</a></li>
+                <li><a class="nav-link scrollto" href="berita.html">Berita</a></li>
+                <li><a class="nav-link scrollto" href="pengumuman.html">Pengumuman</a></li>
+                <li><a class="nav-link scrollto" href="kalender.html">Kalender</a></li>
+                <li><a class="nav-link scrollto" href="unduhan.html">Unduhan</a></li>
+                <li><a class="nav-link scrollto" href="perkuliahan.html">Perkuliahan</a></li>
+                <li class="dropdown"><a href="unduhan.html#"><span>Ujian</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="ujian/pra-tugas-akhir.html">Pra Tugas Akhir</a></li>
+                        <li><a href="ujian/tugas-akhir.html">Tugas Akhir</a></li>
+                        <li><a href="ujian/pameran.html">Ujian Pameran</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="unduhan.html#"><span>Link</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                                                                  <li><a href="https://sites.google.com/asia.ac.id/validasi-pembayaran" target="_blank">Formulir</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://perpustakaan.asia.ac.id/" target="_blank">E-Library</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://e-learning.asia.ac.id/" target="_blank">E-Learning</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://simaka.asia.ac.id/">Simaka</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://asia.ac.id/alumni" target="_blank">Alumni</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://tracerstudy.asia.ac.id/">Tracerstudy</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="https://jurnal.asia.ac.id/" target="_blank">Jurnal</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                                  <li><a href="http://akademik.asia.ac.id/" target="_blank">Akademik</a></li>
+                                    <li role="separator" class="divider"></li>
+                                                  </ul>
+                </li>
+                <li class="dropdown"><a href="unduhan.html#"><span>Lain-Lain</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="profil-dosen.html">Profil Dosen</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="jam-bimbingan.html">Jam Bimbingan</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://lp2m.asia.ac.id/">LP2M</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://asia.ac.id/usp/">USP</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://lpmi.asia.ac.id/">LPMI</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://inbis.asia.ac.id/">INBIS</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://kui.asia.ac.id/">KUI</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://careercenter.asia.ac.id/">CAREER CENTER</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://konseling.asia.ac.id/">KONSELING</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="https://arc.asia.ac.id/">ARC</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="index.html#contact">Kontak</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+    </div>
+</header>
+<!-- End Header -->     <main id="main" class="custom-mainku">
+        <div class="card custom-kartu">
+            <div class="card-body">
+                <div class="container min-700">
+	<div class="row">
+		<div class="col-md-12">
+		    <div class="section-header">
+              <h2>Unduhan</h2>
+            </div>
+			<div class="box-unduhan">
+									<div class="item">
+						<a href="unduhan/134/download">STANDART PENGUJIAN LAPORAN TUGAS AKHIR</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/145/download">Sebaran MatKul Prodi DKV STMIK Asia 2017</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/146/download">Sebaran MatKul Prodi Informatika STMIK Asia 2017</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/147/download">Sebaran MatKul Prodi SK STMIK Asia 2017</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/162/download">FTD001-Pengantar PKL-P2M-KKN</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/163/download">FTD002-Nilai Kompetensi PKL-P2M-KKN</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/164/download">FTD005-Bimbingan PKL-P2M-KKN Mahasiswa</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/165/download">FTD006-Bimbingan PKL-P2M-KKN Dosen</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/166/download">FTD009-Persetujuan Judul TA</a>
+					</div>
+									<div class="item">
+						<a href="unduhan/167/download">FTD012-Bimbingan TA Mahasiswa</a>
+					</div>
+							</div>
+			<div class="text-center">
+				<ul class="pagination">
+        
+                    <li class="disabled"><span>&laquo;</span></li>
+        
+        
+                    
+            
+            
+                                                                        <li class="active"><span>1</span></li>
+                                                                                <li><a href="unduhan%3Fpage=2.html">2</a></li>
+                                                                                <li><a href="unduhan%3Fpage=3.html">3</a></li>
+                                                                                <li><a href="unduhan%3Fpage=4.html">4</a></li>
+                                                                                <li><a href="unduhan%3Fpage=5.html">5</a></li>
+                                                                                <li><a href="unduhan%3Fpage=6.html">6</a></li>
+                                                        
+        
+                    <li><a href="unduhan%3Fpage=2.html" rel="next">&raquo;</a></li>
+            </ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+            </div>
+        </div>
+     </main> 
+    <footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <img src="assetsbaru/img/ftd.jpeg" alt="TheEvenet">
+                    <p>Fakultas Teknologi dan Desain Institut Teknologi dan Bisnis Asia Malang.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Beranda</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="visi-misi.html">Visi & Misi</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="berita.html">Berita</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="pengumuman.html">Pengumuman</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="kalender.html">Kalender</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="unduhan.html">Unduhan</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="perkuliahan.html">Perkuliahan</a>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Alamat</h4>
+                    <p>
+                        Jln. Soekarno Hatta - Rembuksari 1A <br>
+                        Malang<br>
+                        Jawa Timur <br>
+                        <strong>Telpon : </strong>(0341)478877<br>
+                        <strong>Email : </strong>34.124.248.177:8001<br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Media Sosial</h4>
+                    <p>
+                        <a href="https://www.facebook.com/institutasiamalang"><i class="bi bi-facebook"></i>
+                            facebook</a><br>
+                        <a href="https://www.instagram.com/institut_asia/"><i class="bi bi-instagram"></i>
+                            instagram</a><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong>UPT-SI</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="unduhan.html#">Divisi Expert</a>
+        </div>
+    </div>
+</footer>    <!-- Vendor JS Files -->
+<script type="text/javascript" src="assets/front/bootstrap/js/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/6.1.0/jquery.mmenu.all.js"></script>
+<script src="assetsbaru/vendor/aos/aos.js"></script>
+<script src="assetsbaru/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assetsbaru/vendor/glightbox/js/glightbox.js"></script>
+<script src="assetsbaru/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/front/fullcalendar/moment.min.js%3Fv=1.0"></script>
+<script src="assets/front/fullcalendar/fullcalendar.min.js%3Fv=1.0"></script>
+<script src="assets/front/fullcalendar/locale-all.js%3Fv=1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assetsbaru/js/main.js%3Fv=1.9"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('.splide').mount();
+  });
+</script>    <script>
+$(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'title',
+            right: 'month,listMonth, prev,next'
+        },
+        locale: 'id',
+        columnFormat: 'dddd',
+        defaultDate: Date.now(),
+        editable: true,
+        // eventLimit: true, // allow "more" link when too many events
+        events: "http://34.124.248.177:8001/kalender/events",
+        timeFormat: 'H(:mm)',
+    });
+    $('#calendar').on('click', '.fc-prev-button', function() {
+        var value = $('#calendar').fullCalendar('getDate');
+        var date = new Date(value);
+        loadEvents(date.getMonth() + 1);
+
+    });
+    $('#calendar').on('click', '.fc-next-button', function() {
+        var value = $('#calendar').fullCalendar('getDate');
+        var date = new Date(value);
+        loadEvents(date.getMonth() + 1);
+    });
+
+    function loadEvents(month) {
+        $.ajax({
+            type: "GET",
+            url: "http://34.124.248.177:8001/kalender/events/month",
+            data: {
+                month: month
+            },
+            success: function(data) {
+                $('#calendar').fullCalendar('removeEvents');
+                $.each(data, function(index, value) {
+                    $('#calendar').fullCalendar('renderEvent', value);
+                });
+
+            }
+        });
+
+    }
+
+});
+</script>    </body>
+</html>
