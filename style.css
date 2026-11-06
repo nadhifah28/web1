@@ -1,0 +1,445 @@
+/* =========================================
+   PENGATURAN DASAR
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eae1c4;
+  color: #0f2a1e;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Pembungkus isi: lebar maksimal 1190px dan berada di tengah */
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 58px;
+}
+
+/* Garis yang lebarnya 1190px (header, footer, pemisah bagian) */
+.garis-bawah {
+  max-width: 1190px;
+  margin: 0 auto;
+  border-bottom: 1px solid #131f1a;
+}
+
+.garis-atas {
+  max-width: 1190px;
+  margin: 0 auto;
+  border-top: 1px solid #131f1a;
+}
+
+/* display: flex = isi di dalamnya berjajar ke samping */
+.baris {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================================
+   KELAS BANTUAN
+   ========================================= */
+.merah  { color: #b04a32; }
+.kuning { color: #e8bb55; }
+.abu    { color: #7a7d6f; }
+.miring { font-style: italic; }
+.tebal  { font-weight: bold; }
+
+.kecil {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.mono {
+  font-family: "Courier New", monospace;
+}
+
+.plus {
+  text-align: right;
+  font-size: 11px;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+.header {
+  padding-top: 38px;
+  padding-bottom: 32px;
+}
+
+.logo {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.menu a {
+  margin: 0 16px;
+  font-size: 14px;
+  color: #263b32;
+  text-decoration: none;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+.hero {
+  padding-top: 34px;
+}
+
+.hero-isi {
+  margin-top: 20px;
+}
+
+.hero-kiri  { width: 66%; }
+.hero-kanan { width: 30%; }
+
+h1 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 112px;
+  font-weight: normal;
+  line-height: 0.95;
+  letter-spacing: -5px;
+  white-space: nowrap;
+}
+
+.bintang {
+  color: #b04a32;
+  font-size: 55px;
+  letter-spacing: 0;
+  margin-left: 20px;
+  vertical-align: 45px;
+}
+
+.deskripsi {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 260px;
+}
+
+.tombol {
+  margin-top: 20px;
+  padding-bottom: 12px;
+  width: 190px;
+  font-size: 12px;
+  border-bottom: 1px solid #263b32;
+}
+
+.hero-bawah {
+  margin-top: 45px;
+  padding: 15px 0;
+  border-top: 1px solid #d2cdb5;
+  font-size: 9px;
+}
+
+/* =========================================
+   PITA KUNING
+   ========================================= */
+.pita {
+  background-color: #d9bb74;
+  border-top: 1px solid #d9bb74;
+  border-bottom: 1px solid #d9bb74;
+  padding: 14px 48px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.bintang-kecil {
+  font-style: normal;
+  font-size: 22px;
+}
+
+/* =========================================
+   01 CATATAN PILIHAN
+   ========================================= */
+.catatan {
+  padding-top: 45px;
+  padding-bottom: 70px;
+}
+
+.atas {
+  align-items: flex-start;   /* rata atas */
+  margin-top: 35px;
+}
+
+.artikel {
+  width: 59%;
+}
+
+.kartu-samping {
+  width: 34%;
+  background-color: #e8e8df;
+  border-top: 3px solid #263b32;
+  padding: 25px 30px 35px;
+}
+
+h2 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+
+.pembuka {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.5;
+  max-width: 430px;
+  margin-bottom: 30px;
+}
+
+.isi {
+  font-size: 13.5px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+/* huruf pertama yang besar (float = teks mengalir di sebelahnya) */
+.huruf-besar {
+  float: left;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 74px;
+  line-height: 0.8;
+  color: #b04a32;
+  margin-right: 12px;
+  padding-top: 8px;
+}
+
+.artikel .plus {
+  clear: both;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #d2cdb5;
+}
+
+/* isi kartu samping */
+.aa {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: -6px;
+  margin: 10px 0;
+}
+
+.kutipan-kecil {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 20px 0 30px;
+}
+
+.kartu-samping hr {
+  border: none;
+  border-top: 1px solid #eeeeda;
+  margin-bottom: 20px;
+}
+
+.kartu-samping .tebal,
+.kartu-samping .bawah,
+.kartu-samping .catatan-kaki {
+  font-size: 11px;
+}
+
+.kartu-samping .bawah {
+  margin-bottom: 12px;
+}
+
+.catatan-kaki {
+  margin-top: 25px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   02 KATA YANG TINGGAL (latar hijau gelap)
+   ========================================= */
+.gelap {
+  position: relative;
+  background-color: #263b32;
+  color: #f9f6ec;
+  padding: 28px 0 25px;
+}
+
+.tanda-kutip {
+  position: absolute;
+  left: 35px;
+  top: 5px;
+  font-family: Georgia, serif;
+  font-size: 110px;
+  font-weight: bold;
+  line-height: 1;
+  color: #5a6b60;
+}
+
+.kutipan-besar {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 46px;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.gelap-bawah {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #4a5e53;
+}
+
+.plus-gelap {
+  margin-top: 16px;
+}
+
+/* =========================================
+   03 TIGA KATA, TIGA RASA
+   ========================================= */
+.tiga {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.kotak-tiga {
+  margin-top: 30px;
+  border: 1px solid #263b32;
+  align-items: stretch;
+}
+
+.kotak {
+  width: 33.33%;
+  height: 260px;
+  padding: 26px 22px;
+}
+
+.kotak1 {
+  background-color: #f3eb95;
+}
+
+.kotak2 {
+  background-color: #67b66c;
+  color: #f9f6ec;
+  border-left: 1px solid #263b32;
+  border-right: 1px solid #263b32;
+}
+
+.kotak3 {
+  background-color: #df5e4f;
+  background-image:
+
+  background-size: 20px 20px;
+}
+
+.kotak .kecil {
+  font-size: 9px;
+}
+
+.contoh {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 48px;
+  line-height: 1;
+  margin: 35px 0 30px;
+}
+
+.renggang {
+  letter-spacing: 18px;      /* jarak antar huruf */
+}
+
+.kotak2 .contoh {
+  letter-spacing: -2px;
+}
+
+.besar {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: -1px;
+  text-transform: uppercase; /* jadi huruf kapital */
+}
+
+.teks-kotak {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.kode {
+  font-size: 9px;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+
+.plus-tiga {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #d9d6c8;
+}
+
+/* =========================================
+   04 LABORATORIUM MINI
+   ========================================= */
+.lab {
+  padding-top: 45px;
+  padding-bottom: 110px;
+}
+
+.lab h2 {
+  font-size: 38px;
+  margin: 25px 0 20px;
+}
+
+.kecil-teks {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   PENUTUP
+   ========================================= */
+.penutup {
+  padding-top: 55px;
+  padding-bottom: 70px;
+  text-align: center;        /* teks rata tengah */
+}
+
+h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 26px;
+  font-weight: normal;
+  margin-top: 25px;
+}
+
+.kalimat-akhir {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 27px;
+}
+
+.kembali {
+  margin-top: 25px;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.logo-kecil {
+  font-size: 24px;
+}
+
+.footer .kecil {
+  font-size: 8.5px;
+}

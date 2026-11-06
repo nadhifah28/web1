@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ruangkata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;700;900&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+/* ========== VARIABEL & RESET ========== */
+:root{
+  --bg:#edebe2;
+  --ink:#082b1c;
+  --red:#1d3292;
+  --gold:#f1f57f;
+  --sage:#dcadad;
+  --muted:#7a7d6f;
+  --serif:'Source Serif 4',Georgia,serif;
+  --sans:'Inter',Arial,Helvetica,sans-serif;
+  --mono:'Space Mono','Courier New',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1190px;margin:0 auto}
+.in{padding:0 58px}
+.label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.mono{font-family:var(--mono)}
+.row{display:flex;justify-content:space-between;align-items:center}
+
+/* ========== HEADER ========== */
+header{border-bottom:1px solid var(--ink)}
+header .row{padding:38px 58px 32px}
+.logo{font-family:var(--serif);font-weight:700;font-size:28px;letter-spacing:-.03em}
+.logo b{color:var(--red);font-weight:700}
+nav{display:flex;gap:32px;font-size:14px}
+header .meta{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+
+/* ========== HERO ========== */
+.hero{padding:34px 58px 0}
+.eyebrow{display:flex;align-items:center;gap:8px;color:var(--ink)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+.hero-grid{display:grid;grid-template-columns:1.6fr 1fr;align-items:center;gap:40px;margin-top:20px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(64px,9.4vw,118px);line-height:.95;letter-spacing:-.04em}
+h1 em{color:var(--red);font-style:italic}
+h1 .star{color:var(--red);font-size:.55em;margin-left:.3em;vertical-align:.45em}
+h1 .dot{color:var(--red)}
+.hero-side .label{margin-bottom:22px}
+.hero-side p{font-size:15px;line-height:1.75;max-width:260px}
+.hero-side a{display:flex;justify-content:space-between;width:190px;margin-top:22px;padding-bottom:12px;border-bottom:1px solid var(--ink);font-size:12px}
+.hero-foot{display:flex;justify-content:space-between;margin-top:48px;padding:14px 0 16px;border-top:1px solid #d9d6c8;font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:500}
+
+/* ========== MARQUEE ========== */
+.marquee{background:var(--gold);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);overflow:hidden}
+.marquee div{display:flex;justify-content:space-between;align-items:center;padding:16px 70px 16px 70px;font-family:var(--serif);font-style:italic;font-size:30px;white-space:nowrap;gap:40px}
+.marquee i{font-style:normal;font-size:24px}
+
+/* ========== 01 CATATAN ========== */
+.sec-head{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.catatan{padding:46px 58px 70px}
+.cat-grid{display:grid;grid-template-columns:1fr 362px;gap:79px;margin-top:34px}
+.tag{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:500}
+.tag span{color:var(--muted);margin-left:8px}
+h2.judul{font-family:var(--serif);font-weight:400;font-size:44px;line-height:1.1;letter-spacing:-.03em;margin:22px 0 22px}
+h2.judul em{font-style:italic}
+.lead{font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.5;max-width:430px}
+.art p{font-size:13.5px;line-height:1.85;margin-top:18px}
+.art p.drop::first-letter{float:left;font-family:var(--serif);color:var(--red);font-size:74px;line-height:.8;padding:8px 12px 0 0}
+.art p.drop{margin-top:34px;text-align:justify}
+.art p.note{color:var(--red);font-style:italic}
+.art .end{display:flex;justify-content:flex-end;border-top:1px solid #d9d6c8;margin-top:42px;padding-top:16px;font-size:11px}
+.card{background:var(--sage);border-top:3px solid var(--ink);padding:24px 30px 38px;align-self:start}
+.card .row{font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.aa{font-family:var(--serif);font-weight:600;font-size:120px;line-height:1;letter-spacing:-.06em;margin:14px 0 12px;display:block}
+.aa b{color:var(--red)}
+.card .sub{font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.card .quote{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.5;margin:20px 0 32px}
+.card hr{border:0;border-top:1px solid #cfcfc2;margin-bottom:20px}
+.card dt{font-size:11px;font-weight:700}
+.card dd{font-size:11px;color:var(--muted);margin-bottom:12px}
+.card .foot{font-size:10.5px;color:var(--muted);line-height:1.7;margin-top:28px}
+
+/* ========== 02 KUTIPAN ========== */
+.quote-sec{background:var(--ink);color:var(--bg);position:relative;padding:26px 0 32px;margin-top:0}
+.quote-sec .sec-head{color:#c9cfc2}
+.quote-sec::before{content:"\201C";position:absolute;left:36px;top:6px;font-family:var(--serif);font-size:110px;line-height:1;color:#5a6b60;font-weight:700}
+.quote-sec blockquote{text-align:center;font-family:var(--serif);font-size:46px;line-height:1.3;letter-spacing:-.02em;margin:46px 0 40px}
+.quote-sec blockquote em{color:var(--gold)}
+.quote-sec .qfoot{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;padding-bottom:20px;border-bottom:1px solid #4a5e53}
+.quote-sec .qfoot .mono{text-transform:none;letter-spacing:.15em;color:var(--gold)}
+.quote-sec .plus{text-align:right;font-size:11px;margin-top:16px}
+
+/* ========== 03 TIGA RASA ========== */
+.tiga{padding:44px 58px 0}
+.tiga-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink);margin-top:30px}
+.tiga-grid article{padding:26px 22px 22px;height:260px;display:flex;flex-direction:column}
+.tiga-grid article:nth-child(1){background:var(--gold)}
+.tiga-grid article:nth-child(2){background:var(--red);color:var(--bg);border-left:1px solid var(--ink);border-right:1px solid var(--ink)}
+.tiga-grid article:nth-child(3){background-color:var(--sage);background-image:linear-gradient(#dcdcd0 1px,transparent 1px),linear-gradient(90deg,#dcdcd0 1px,transparent 1px);background-size:20px 20px}
+.tiga-grid .k{font-family:var(--mono);font-size:8.5px;letter-spacing:.2em;text-transform:uppercase}
+.tiga-grid .demo{font-family:var(--serif);font-size:48px;line-height:1;margin:32px 0 28px;min-height:60px}
+.tiga-grid article:nth-child(1) .demo{letter-spacing:.18em}
+.tiga-grid article:nth-child(2) .demo{font-style:italic;letter-spacing:-.03em}
+.tiga-grid article:nth-child(3) .demo{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:36px;letter-spacing:-.01em;margin-top:34px}
+.tiga-grid p{font-size:12px;line-height:1.8}
+.tiga-grid code{font-family:var(--mono);font-size:8.5px;margin-top:auto;opacity:.75}
+.tiga .end{display:flex;justify-content:flex-end;border-top:1px solid #d9d6c8;margin-top:18px;padding:16px 0 40px;font-size:11px}
+
+/* ========== 04 LAB ========== */
+.lab-wrap{border-top:1px solid var(--ink);margin-top:0}
+.lab{padding:46px 58px 80px}
+.lab h2{font-family:var(--serif);font-weight:400;font-size:38px;line-height:1.15;letter-spacing:-.03em;margin:30px 0 20px}
+.lab h2 em{font-style:italic}
+.lab p.s{font-size:12px;color:var(--muted);line-height:1.8}
+/* lab interaktif murni CSS */
+.lab input{position:absolute;opacity:0}
+.lab .pil{display:flex;gap:10px;margin:34px 0 22px;flex-wrap:wrap}
+.lab .pil label{border:1px solid var(--ink);padding:6px 16px;font-size:11px;cursor:pointer}
+.lab input:checked + label{background:var(--ink);color:var(--bg)}
+.lab input:focus-visible + label{outline:2px solid var(--red);outline-offset:2px}
+.lab .out{font-family:var(--serif);font-size:44px;min-height:60px;transition:all .3s}
+.lab:has(#m1:checked) .out{letter-spacing:.2em}
+.lab:has(#m2:checked) .out{font-style:italic;color:var(--red)}
+.lab:has(#m3:checked) .out{font-family:var(--sans);font-weight:900;text-transform:uppercase}
+
+/* ========== PENUTUP ========== */
+.penutup{border-top:1px solid var(--ink);padding:56px 0 70px;text-align:center}
+.penutup .tag{display:block}
+.penutup h3{font-family:var(--serif);font-weight:400;font-size:26px;margin-top:28px}
+.penutup h3 + p{font-family:var(--serif);font-style:italic;font-size:27px;color:var(--muted);margin-top:4px}
+.penutup a{display:inline-block;margin-top:26px;font-size:11px;border-bottom:1px solid var(--ink);padding-bottom:2px}
+
+/* ========== FOOTER ========== */
+footer{border-top:1px solid var(--ink)}
+footer .row{padding:36px 58px 34px}
+footer .logo{font-size:24px}
+footer span{font-size:8.5px;letter-spacing:.18em;text-transform:uppercase}
+
+/* ========== RESPONSIF ========== */
+@media(max-width:900px){
+  header .row,.hero,.catatan,.tiga,.lab,footer .row{padding-left:24px;padding-right:24px}
+  nav{display:none}
+  .hero-grid,.cat-grid{grid-template-columns:1fr;gap:40px}
+  .tiga-grid{grid-template-columns:1fr}
+  .tiga-grid article:nth-child(2){border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  .quote-sec blockquote{font-size:28px}
+  .marquee div{font-size:20px;padding:14px 24px}
+  .quote-sec .in{padding:0 24px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap row">
+    <a href="#" class="logo">ruang<b>kata.</b></a>
+    <nav><a href="#catatan">Catatan</a><a href="#kutipan">Kutipan</a><a href="#lab">Laboratorium ↗</a></nav>
+    <span class="meta">Jurnal Digital / Vol. 01</span>
+  </div>
+</header>
+
+<div class="wrap">
+<section class="hero">
+  <p class="label eyebrow">Tempat kata-kata menemukan bentuk</p>
+  <div class="hero-grid">
+    <h1>Setiap kata <span class="star">✳</span><br>punya <em>ruang</em><span class="dot">.</span></h1>
+    <div class="hero-side">
+      <p class="label">Sebuah eksperimen tipografi</p>
+      <p>Tentang kalimat yang singgah, pikiran yang tumbuh, dan keindahan di antara keduanya.</p>
+      <a href="#catatan"><span>Mulai menjelajah</span><span>↘</span></a>
+    </div>
+  </div>
+  <div class="hero-foot"><span>Sedikit kata. Banyak makna.</span><span>Scroll untuk membaca ↓</span></div>
+</section>
+</div>
+
+<div class="marquee"><div>
+  <span>kata &amp; ruang</span><i>✳</i><span>bentuk &amp; makna</span><i>✳</i><span>huruf &amp; rasa</span><i>✳</i><span>kata &amp; ruang</span><i>✳</i>
+</div></div>
+
+<div class="wrap">
+<section class="catatan" id="catatan">
+  <div class="sec-head"><span>01 / Catatan pilihan</span><span>Membaca dengan perlahan</span></div>
+  <div class="cat-grid">
+    <div class="art">
+      <p class="tag" style="margin-top:20px">Tentang keseharian <span>· 3 menit baca</span></p>
+      <h2 class="judul">Seni menemukan<br>jeda di tengah <em>riuh.</em></h2>
+      <p class="lead">Tidak semua ruang harus diisi. Tidak semua waktu harus berlari.</p>
+      <p class="drop">Pagi datang tanpa terburu-buru. Cahaya menyelinap lewat tirai, menyentuh sudut meja, lalu berhenti di halaman buku yang semalam belum selesai dibaca. Di luar, kota mulai menyusun suaranya. Di dalam, secangkir teh masih mengepulkan cerita.</p>
+      <p>Kita sering lupa bahwa jeda juga bagian dari perjalanan. Berhenti sebentar bukan berarti kehilangan arah. Kadang, justru dalam diam, kita mendengar hal-hal yang selama ini tertutup oleh kesibukan.</p>
+      <p class="note">Hari ini, beri dirimu ruang untuk sekadar ada.</p>
+      <div class="end">+</div>
+    </div>
+    <aside class="card">
+      <div class="row"><span>Catatan pinggir</span><span>↗</span></div>
+      <span class="aa">Aa<b>.</b></span>
+      <p class="sub">Serif meets sans-serif</p>
+      <p class="quote">Dua karakter berbeda.<br>Satu cerita yang sama.</p>
+      <hr>
+      <dl>
+        <dt>Serif</dt><dd>Hangat, klasik, bercerita.</dd>
+        <dt>Sans-serif</dt><dd>Bersih, lugas, bersahaja.</dd>
+      </dl>
+      <p class="foot">Bentuk huruf ikut menentukan bagaimana sebuah pesan terasa.</p>
+    </aside>
+  </div>
+</section>
+</div>
+
+<section class="quote-sec" id="kutipan">
+  <div class="wrap in">
+    <div class="sec-head"><span>02 / Kata yang tinggal</span><span>Sebuah pengingat kecil</span></div>
+    <blockquote>Pelan-pelan bukan berarti tertinggal.<br>Bisa jadi, kamu sedang<br><em>menikmati perjalanan.</em></blockquote>
+    <div class="qfoot"><span>— Catatan ruang kata</span><span class="mono">take your time.</span></div>
+    <div class="plus">+</div>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="tiga">
+  <div class="sec-head"><span>03 / Tiga kata, tiga rasa</span><span>Bermain dengan latar &amp; huruf</span></div>
+  <div class="tiga-grid">
+    <article><span class="k">01 — Letter spacing</span><div class="demo">jeda</div><p>Ruang kecil di antara kesibukan.<br>Tarik napas. Nikmati sekarang.</p><code>letter-spacing: .18em;</code></article>
+    <article><span class="k">02 — Font style</span><div class="demo">tumbuh.</div><p>Tak harus terlihat setiap hari.<br>Akar pun bekerja dalam sunyi.</p><code>font-style: italic;</code></article>
+    <article><span class="k">03 — Text transform</span><div class="demo">berani</div><p>Mulai sebelum merasa siap.<br>Satu langkah sudah berarti.</p><code>text-transform: uppercase;</code></article>
+  </div>
+  <div class="end">+</div>
+</section>
+</div>
+
+<div class="wrap lab-wrap" id="lab">
+<section class="lab">
+  <p class="label">04 / Laboratorium mini</p>
+  <h2>Kata yang sama.<br><em>Rasa yang berbeda.</em></h2>
+  <p class="s">Geser, pilih, dan lihat bagaimana CSS<br>mengubah suasana sebuah kalimat.</p>
+  <div class="pil">
+    <input type="radio" name="m" id="m0" checked><label for="m0">biasa</label>
+    <input type="radio" name="m" id="m1"><label for="m1">renggang</label>
+    <input type="radio" name="m" id="m2"><label for="m2">miring</label>
+    <input type="radio" name="m" id="m3"><label for="m3">tegas</label>
+  </div>
+  <p class="out">Pelan-pelan saja.</p>
+</section>
+</div>
+
+<div class="wrap">
+<section class="penutup">
+  <span class="tag">Sebelum kamu pergi</span>
+  <h3>Kalimat sederhana bisa jadi istimewa.</h3>
+  <p>Tergantung bagaimana kamu memberinya ruang.</p>
+  <a href="#">Kembali ke atas ↑</a>
+</section>
+</div>
+
+<footer>
+  <div class="wrap row">
+    <a href="#" class="logo">ruang<b>kata.</b></a>
+    <span>Dibuat untuk dibaca. Dirancang untuk dicoba.</span>
+    <span>Latihan CSS · Vol. 01</span>
+  </div>
+</footer>
+
+</body>
+</html>
